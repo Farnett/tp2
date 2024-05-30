@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #add8e6; /* Fondo celeste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 2px -2px gray;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label, input, button {
+    margin-bottom: 10px;
+}
+
+#resultado, #imc {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
