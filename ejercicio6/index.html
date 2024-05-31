@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validación de Formulario</title>
+    <title>Formulario con Validaciones</title>
     <link rel="stylesheet" href="/ejercicio6/style.css">
 </head>
 <body>
-    <header>
-        <h1>Formulario de Validación</h1>
-    </header>
-    <main>
-        <form id="formulario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" maxlength="50" required>
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" maxlength="50" required>
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" required>
-            <label for="altura">Altura (cm):</label>
-            <input type="number" id="altura" required>
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" required>
-            <button type="button" onclick="validarFormulario()">Enviar</button>
-        </form>
-        <p id="mensajeValidacion"></p>
-    </main>
-    <script src="/ejercicio6/scrypt.js"></script>
+    <div class="container">
+        <header>
+            <h1>Formularios</h1>
+        </header>
+        <h1>Formulario con Validaciones</h1>
+        <div class="form-box">
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="altura">Altura (cm):</label>
+                    <input type="number" id="altura" name="altura" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="button" onclick="validarFormulario()">Enviar</button>
+            </form>
+            <p id="mensaje"></p>
+        </div>
+    </div>
+    <script src="/ejercicio6/script.js"></script>
 </body>
 </html>
